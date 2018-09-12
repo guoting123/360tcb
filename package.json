@@ -1,0 +1,25 @@
+{
+  "name": "360tcb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoting123/360tcb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guoting123/360tcb/issues"
+  },
+  "homepage": "https://github.com/guoting123/360tcb#readme",
+  "devDependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}

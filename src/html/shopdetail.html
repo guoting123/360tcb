@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		店铺详情页
+	</body>
+	<script src="../js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$.getJSON("http://localhost:8080/data/shop1.json",function(res){
+			console.log(res)//arr
+			var id=localStorage.id;
+			console.log(id)
+			for(var i=0;i<res.length;i++){
+				if(res[i].shop_id==id){
+					console.log(res[i])
+				}
+			}
+		})
+	</script>
+</html>

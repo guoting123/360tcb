@@ -1,0 +1,89 @@
+ 
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+				list-style: none;
+			}
+			#zc{
+				width: 480px;
+				height: 350px;
+				border: 1px solid ;
+				background: white;
+				position: fixed;
+			    top: 200px;
+			    left: 500px;
+				box-sizing: border-box;
+			}
+			#zc .welcome{
+				/*padding-left: 20px;*/
+				width: 100%;
+				height: 60px;
+				background-image: url(//p.ssl.qhimg.com/t01bc75514bf55a2f53.png);
+				background-position-y: -60px;
+				background-position-x: 20px;
+				text-align: center;
+				line-height: 60px;
+			}
+			
+			#zc .welcome a{
+				float: right;
+				font-size: 40px;
+				margin-right: 10px;
+				text-decoration: none;
+			}
+			#zc .main{
+				width: 100%;
+				height: 250px;
+			}
+			#zc .main li{
+				margin-top: 15px;
+			}
+			#zc .main li:last-child{
+				padding-left: 110px;
+			}
+			#zc .main label{
+				width: 100px;
+				padding-right: 10px;
+				display: inline-block;
+				text-align: end;
+			}
+			#tel,#pas,#zhuc{
+				width: 230px;
+				height: 30px;
+			}
+			#yzm,#xym{
+				width: 150px;
+				height: 30px;
+			}
+		</style>
+		<div id="zc">
+			<div class="welcome">
+			   	<span>欢迎登陆360同城帮</span>	
+			   	<a href="#" id="closeZc">×</a>
+			   </div>
+			   <div class="main">
+			   	<ul>
+			   		<li>
+			   			<label for="tel">手机号</label><input type="text" name="" id="tel"/><span></span>
+			   		</li>
+			   		<li>
+			   			<label for="yzm">验证码</label><input type="text" name="" id="yzm"/>
+			   			<span class="yzm"></span>
+			   			<a href="#" class="change">换一张</a>
+			   			<span class="tishi"></span>
+			   		</li>
+			   		<li>
+			   			<label for="xym">校验码</label><input type="text" name="" id="xym"/>
+			   			<button id="getXym">免费获取校验码</button>
+			   			<span></span>
+			   		</li>
+			   		<li>
+			   			<label for="pas">密码</label><input type="password" name="" id="pas"/>
+			   		</li>
+			   		<li>
+			   			<button id="zhuc">立即注册</button>
+			   		</li>
+			   	</ul>
+			   </div>
+		</div>

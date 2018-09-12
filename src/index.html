@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>360同城帮</title>
+		<link rel="stylesheet" type="text/css" href="css/page1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	</head>
+	<body>
+		<!--遮罩层-->
+		<div id="cover">
+			<!--登录-->
+			<div id="log">
+			   <div class="welcome">
+			   	<span>欢迎登陆360同城帮</span>	
+			   	<a href="#" id="closeLogin">×</a>
+			   </div>
+			   <div class="main">
+			   	<ul>
+			   		<li>
+			   			<label for="user">账号</label><input type="text" name="" id="user" placeholder="手机号/用户名/邮箱"/>
+			   		</li>
+			   		<li>
+		   			<label for="pass">密码</label><input type="text" name="" id="pass" placeholder="请输入您的密码"/>
+			   		</li>
+			   		<li>
+			   			<input type="checkbox" id="next"/>下次自动登录
+			   		</li>
+			   		<li>
+			   			<button id="lo">登录</button>
+			   		</li>
+			   		<li>
+			   			其他账号登录：
+			   		</li>
+			   		<li class="dl"></li>
+			   	</ul>
+			   </div>
+		   </div>
+		   <!--注册-->
+		   <div id="zhuce">
+			   <!--<div class="welcome">
+			   	<span>欢迎登陆360同城帮</span>	
+			   	<a href="#" id="closeLogin">×</a>
+			   </div>
+			   <div class="main">
+			   	<ul>
+			   		<li>
+			   			<label for="user">账号</label><input type="text" name="" id="user" placeholder="手机号/用户名/邮箱"/>
+			   		</li>
+			   		<li>
+			   			<label for="pass">密码</label><input type="text" name="" id="pass" placeholder="请输入您的密码"/>
+			   		</li>
+			   		<li>
+			   			<input type="checkbox" id="next"/>下次自动登录
+			   		</li>
+			   		<li>
+			   			<button id="lo">登录</button>
+			   		</li>
+			   		<li>
+			   			其他账号登录：
+			   		</li>
+			   	</ul>
+			   </div>-->
+		   </div>
+		</div>
+		<!--头部-->
+		<div id="header">
+			<div id="header1">
+				<div class="left">
+					<ul>
+						<li class="li1">
+							<span>北京</span>
+							<a id="toggle">[切换城市]</a>
+							<div id="city">
+								<div class="top">
+									<div>城市列表</div>
+									<div class="close"></div>
+								</div>
+								<div class="bottom">
+									<div class="hot">
+									   <div class="div1">热门</div>
+									   <ul class="hotcity">
+									   </ul>
+									</div>
+									<div class="pinyin">
+										<div style="width: 50px;">拼音</div>
+										<div class="citylist">
+										   <ul class="list">
+										   <!--	<li>a-z</li>-->
+										   </ul>
+										   <ul class="city">
+										   	<!--<li>城市</li>-->
+										   </ul>
+										</div>
+									   
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="http://bang.360.cn/">同城帮首页</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li id="login"><a href="#">登录</a></li>
+						<li><a href="#" id="register">注册</a></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">在线客服</a>（9:00-21:00）</li>
+						<li class="user_server">
+							<span>
+								客户服务
+							</span>
+							<!--<p>
+								<a href="#">帮助中心</a>
+								<a href="#">维修付款</a>
+							</p>-->
+						</li>
+						<li><a href="#">论坛</a></li>
+						<li class="end"><a href="#">投诉建议</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--导航部分-->
+		<div id="nav">
+			<div class="left">
+				<img src="image/t01d625639f4e39d711.png" />
+			</div>
+			<div class="right">
+				<ul>
+					<li class="li1"><a href="#">二手优品</a><img src="image/t01198d7629a60c4940 (1).png"/></li>
+					<li><a href="#">手机回收</a></li>
+					<li><a href="#">手机维修</a></li>
+					<li><a href="#">电脑维修</a></li>
+					<li><a href="#">以旧换新</a></li>
+					<li><a href="#">手机租用</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--轮播图部分-->
+		<div id="swiper">
+			 <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"><img src="image/t019f09cd1c5850e1a7.png"/></div>
+			      <div class="swiper-slide"><img src="image/t01f2fbcfa29801c4b2.jpg"/></div>
+			      <div class="swiper-slide"><img src="image/t01f33137f9dde655ce.png"/></div>
+			      <div class="swiper-slide"><img src="image/t010277e84ce18b98b6.png"/></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			</div>
+			<!--维修导航-->
+		  <div class="xiu_ab">
+		  	<ul class="xiu">
+		  		<li class="xiu_tel">修手机/pad</li>
+		  		<li class="xiu_note">修电脑</li>
+		  		<li class="sell_tel">卖手机/电脑</li>
+		  		<li class="sell_note">卖二手机</li>
+		  	</ul>
+		 
+		  <!--维修详情-->
+		      <!--修手机-->
+			  <ul id="xiu_tel"></ul>
+			  <!--修电脑-->
+			  <div id="xiu_note">
+			  	<div class="top">
+			  		<div>
+			  			热门问题：
+			  		</div>
+			  		<ul class="hotTrouble">
+			  		</ul>
+			  	</div>
+			  	<div class="top">
+			  		<div style="width: 200px;">
+			  			其他问题：
+			  		</div>
+			  		<ul class="otherTrouble">
+			  		</ul>
+			  	</div>
+			  </div>
+			  <!--卖手机/电脑-->
+			  <ul id="sell_tel">
+			  </ul>
+			  <!--卖二手机-->
+			  <ul id="sell_note"></ul>
+		   </div>
+		  <!--图标固定定位-->
+		  <div class="icon">
+		  	<img src="image/t0113dfdd3937c1f092.png"/>
+		  </div>
+		</div>
+		<!--图片展示部分-->
+		<div id="content">
+			<div id="div1">
+				<a href="#"><img src="image/t01aad5c130b8653368.jpg" /></a>
+				<a href="#"><img src="image/t01dc8f9631026e7e17.jpg"/></a>
+				<a href="#"><img src="image/t013b648422d14559d0.png"/></a>
+				<a href="#"><img src="image/t01fc1fd0e5522663ba.jpg"/></a>
+			</div>
+			<!--热门手机回收-->
+			<div id="hot">
+				<div class="top">
+					<h2 class="left">
+						热门手机回收
+					</h2>
+					<div class="right"><a href="#">查看更多></a></div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="#"><img src="https://p.ssl.qhimg.com/t01a10599c63e402740.png"/></a>
+					</div>
+					<div class="phone">
+					</div>
+				</div>
+			</div>
+			
+			<!--优品精选-->
+			<div id="you">
+				<div class="top">
+					<h2 class="left">
+						优品精选
+					</h2>
+					<div class="right"><a href="#">查看更多></a></div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="#"><img src="http://p3.qhimg.com/t015c27655049610a67.png"/></a>
+					</div>
+					<div class="phone">
+					</div>
+				</div>
+			</div>
+			<div id="xiu">
+				<h2>
+				   到店维修
+			    </h2>
+			</div>
+		</div>
+		<!--到店维修部分-->
+		<div id="miantain">
+			<!--搜索栏-->
+			<div id="search">
+				<div class="div1">北京&nbsp;&nbsp;▼</div>
+				<div class="div1 div2">选择区县&nbsp;&nbsp;▼</div>
+				<div class="div3">
+					<input type="text" name="" id="text1" value="" placeholder="输入您的位置查找附近的商家"/>
+				</div>
+				<div class="div4">
+					<input type="button" name="btn" id="btn" value="搜索" />
+				</div>
+			</div>
+			<!--店铺-->
+			<section>
+				<!--左边-->
+				<div id="shop">
+					<div id="nav_shop">
+						<ul>
+							<li id="defult">默认排序</li>
+							<li id="count">按成交量</li>
+							<li id="visit">按人气</li>
+							<li><input type="checkbox" name="check" id="check" value="" />先行赔付</li>
+						</ul>
+						<div id="map">
+							<img src="https://p.ssl.qhimg.com/t01c9ef4268ff127a67.png"/>
+							<div>地图模式</div>
+						</div>
+					</div>
+					<ul id="shop_list">
+					</ul>
+				</div>
+				<!--右边-->
+				<div id="shopComment">
+					<div id="top">
+						商家好评榜
+					</div>
+					<ul id="commentList">
+						<!--<li>
+						    <ul class="number">
+						    	<li>1</li>
+						    </ul>
+							<div class="image"><img src=""/></div>
+							<ul class="detail">
+								<li></li>
+								<li>条评论</li>
+							</ul>
+						</li>	-->
+					</ul>
+				</div>
+			</section>
+			<div id="page">
+				
+			</div>
+			
+		</div>
+		<!--底部-->
+		<footer>
+			<div id="footer">
+				<div id="div1">
+					<div class="div1">
+						<span class="span span1">
+							
+						</span>
+						<ul>
+							<li>购物指南</li>
+							<li><a href="#">购物流程</a></li>
+							<li><a href="#">帮助文档</a></li>
+						</ul>
+					</div>
+					<div class="div1">
+						<span class="span span2">
+							
+						</span>
+						<ul>
+							<li>支付方式</li>
+							<li><a href="#">在线支付、当面付款</a></li>
+							
+						</ul>
+					</div>
+					<div class="div1">
+						<span class="span span3">
+							
+						</span>
+						<ul>
+							<li>售后服务</li>
+							<li><a href="#">投诉建议</a></li>
+							<li><a href="#">售后说明</a></li>
+						</ul>
+					</div>
+					<div class="div1">
+						<span class="span span4">
+							
+						</span>
+						<ul>
+							<li>商家合作</li>
+							<li><a href="#">加盟同城帮</a></li>
+							<li><a href="#">新闻采访/跨界合作</a></li>
+						</ul>
+					</div>
+				</div>	
+				<div id="div2">
+					<ul>
+						<li>客服电话：4000-399-360/010-53767360&nbsp;&nbsp;&nbsp;
+							<a href="#">投诉建议</a>&nbsp;&nbsp;&nbsp;
+							<a href="#">网站地图</a>
+						</li>
+						<li>
+							copyright &copy; 2005-2018 360.CN All Right Reserved 360安全中心
+						</li>
+						<li>
+							<a href="#">京ICP备08010314号-19</a>&nbsp;&nbsp;&nbsp京公网安备11000000006号
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</footer>
+	</body>
+	<!--==================百度模板============-->
+	<!--热门手机回收-->
+	<script type="text/html" id="temp1">
+		
+		<%for(var i=0;i<arr.length;i++){%>
+			<div class="phone1">
+				<div class="top1">
+						 <img src="<%=arr[i].img_url%>" class="image1"/>
+				</div>
+				<div class="bottom1">
+					<%=arr[i].model_alis%>
+				</div>
+			</div>
+		<%}%>
+	</script>
+	<!--优品精选-->
+	<script type="text/html" id="temp2">
+		
+		<%for(var i=0;i<arr.length;i++){%>
+			<div class="phone1">
+				<div class="top1">
+						 <img src="<%=arr[i].thum_img.mid%>" class="image1"/>
+				</div>
+				<div class="bottom1">
+					<%=arr[i].model_name%>
+				</div>
+				<div class="price">
+					￥<%=arr[i].price%>
+				</div>
+			</div>
+		<%}%>
+	</script>
+	<!--城市切换-->
+	<script type="text/html" id="temp3">
+		
+		<%for(var i=0;i<hotcity.length;i++){%>
+				<li onclick="changeHotcity('<%=hotcity[i].name%>')"><a><%=hotcity[i].name%></a></li>
+		<%}%>	
+	</script>
+	<script type="text/html" id="tempList">
+		
+		<%for(var k in obj){%>
+			<li onclick="changeCity('<%=k%>')"><a><%=k%></a></li>
+			
+		<%}%>	
+	</script>
+	<script type="text/html" id="tempCity">
+		
+		<%for(var i=0;i<city.length;i++){%>
+				<li onclick="changeHotcity('<%=city[i].name%>')"><a><%=city[i].name%></a></li>
+		<%}%>	
+	</script>
+	<!--修手机/paid-->
+	<script type="text/html" id="tempxiu1">
+		
+		<%for(var i=0;i<arr.length;i++){%>
+			<li>
+			  	<div class="left"><%=arr[i].name%>>&nbsp;&nbsp;|</div>
+			  	<div class="right">
+			  		<ul>
+			  			<%for(var j=0;j<arr[i].list.length;j++){%>
+			  				<li><a href="#"><%=arr[i].list[j].name%></a></li>
+			  			<%}%>
+			  		</ul>
+			  	</div>
+			</li>
+		<%}%>	
+	</script>
+	<!--修电脑-->
+	<script type="text/html" id="tempxiu2H">
+		
+		<%for(var i=0;i<arr.length;i++){%>
+				<li><a href="#"><%=arr[i].name%></a></li>
+		<%}%>	
+	</script>
+	<script type="text/html" id="tempxiu2O">
+		
+		<%for(var i=0;i<arr.length;i++){%>
+			<li><a href="#"><%=arr[i].name%></a></li>		
+		<%}%>	
+	</script>
+	<!--卖手机/电脑-->
+	<script type="text/html" id="tempxiu3">
+		
+		<%for(var i=0;i<arr.length;i++){%>
+				<li><a href="#"><%=arr[i].name%></a></li>
+		<%}%>	
+	</script>
+	<!--二手机-->
+	<script type="text/html" id="tempxiu4">
+		
+		<%for(var k in obj){%>
+				<li><a href="#"><%=obj[k]%></a></li>
+		<%}%>	
+	</script>
+	<!--店铺左-->
+	<script type="text/html" id="tempshop">
+		
+		<%for(var i=0;i<arr.length;i++){%>
+			<li>
+				<div class="image"><img src="<%=arr[i].shop_ico%>"/></div>
+				<ul class="detail">
+					<li><%=arr[i].shop_name%>&nbsp店铺等级：</li>
+					<li>主营：<%=arr[i].main%></li>
+					<li>地址：<%=arr[i].addr%></li>
+				</ul>
+				<ul class="renzheng">
+					<li><img src="https://p.ssl.qhimg.com/t01dddbd1775cf1d1d7.png"/>
+						先行赔付
+					</li>
+					<li><img src="https://p.ssl.qhimg.com/t0141b1afb0bd0d7e2e.png"/>
+						同城帮认证
+					</li>
+					<li>人气：<%=arr[i].shop_visit%>次浏览</li>
+				</ul>
+				<input type="button" value="进入店铺" class="btnIn" onclick="loginShop(<%=arr[i].shop_id%>)"/>
+			</li>	
+		<%}%>	
+	</script>
+	<!--商家好评-->
+	<script type="text/html" id="tempComment">
+		
+		<%for(var i=0;i<7;i++){%>
+			<li>
+				<ul class="number">
+					<li><%=i+1%></li>
+				</ul>
+				<div class="image"><img src="<%=arr[i].shop_ico%>"/></div>
+				<ul class="detail">
+					<li><%=arr[i].shop_name%></li>
+					<li><%=arr[i].comments%>条评论</li>
+				</ul>
+		    </li>		
+		<%}%>	
+	</script>
+	<script src="js/baiduTemplate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ejs.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pagePlugin.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zhuce.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>
